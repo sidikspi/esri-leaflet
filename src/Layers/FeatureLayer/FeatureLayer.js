@@ -144,7 +144,7 @@ export var FeatureLayer = FeatureManager.extend({
           feature: layer.feature,
           permanent: permanent
         }, true);
-        //this._map.removeLayer(layer);
+        this._map.removeLayer(layer);
       }
       if (layer && permanent) {
         delete this._layers[id];
